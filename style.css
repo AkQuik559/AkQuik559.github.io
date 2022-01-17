@@ -104,7 +104,7 @@ nav ul li a {
     color: rgb(6, 126, 126);
 }
 /* This modifies the border to nothing and Background color of down-Cv Button */
-.down-cv{
+.projects{
     background-color: rgb(6, 126, 126);
     color: white;
     border: none;
