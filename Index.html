@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial -scale=1.0">
     <title>Personal Website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Using-FontAwesom -->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,10 +22,14 @@
             <!-- Menu -->
             <ul>
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact Info</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
+            <!-- Menu Bars -->
+            <div class="toggle">
+
+            </div>
         </nav>
         <!-- Text -->
         <div class="text-container">
@@ -36,7 +44,7 @@
         <img src="Backgrounds/warren-wong-bh4LQHcOcxE-unsplash.jpg" alt="model" class="model">
     </section>
     <!-- About -->
-    <div class="about-container">
+    <div class="about-container" id="About">
         <!-- img -->
         <img src="Backgrounds/florian-klauer-mk7D-4UCfmg-unsplash.jpg" alt="computer">
         <!-- About Text -->
@@ -53,7 +61,7 @@
         </div>
     </div>
     <!-- services -->
-    <div class="services">
+    <div class="services" id="Services">
         <!-- Text -->
         <div class="services-text">
             <p>Services</p>
@@ -65,7 +73,7 @@
         <!-- Box -->
         <div class="box-container">
             <!-- box 1 -->
-            <div class="box-1"> 
+            <div class="box-1">
                 <span>1</span>
                 <p class="heading">Web Design</p>
                 <p class="details">if you want to make a software for your business contact me.</p>
@@ -87,6 +95,45 @@
             </div>
         </div>
     </div>
+    <!-- contact me -->
+    <div class="contact-me" id="Contact">
+        <p>If you have any Projects in mind.</p>
+        <button>Contact Me</button>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>Parmbir Singh</p>
+        <p>I work incredible fast and efficient. Please give me a chance to work on your projects.</p>
+        <!-- Social -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/sunny.sangha.5" target="blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter" title="This Page Does Not Exists"></i></a>
+            <a href="https://www.instagram.com/punjabikush/" target="blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/parmbir-singh-9150651bb/" target="blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCl0g01Kt1X39woUvAG_W9Fw" target="blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <!-- Copyright -->
+        <p class="copyright">Copyright by Parmbir Singh</p>
+    </footer>
+    <!-- attached social bar -->
+    <div class="social">
+        <a href="https://www.facebook.com/sunny.sangha.5" target="blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter" title="This Page Does Not Exists"></i></a>
+        <a href="https://www.instagram.com/punjabikush/" target="blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/parmbir-singh-9150651bb/" target="blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/channel/UCl0g01Kt1X39woUvAG_W9Fw" target="blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/JQuery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.toggle').click(function(){
+                    $('.toggle').toggleClass('active')
+                    $('nav').toggleClass('active')
+                })
+            })
+
+        </script>
 </body>
 
 </html>
