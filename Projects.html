@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <section>
+        <!-- Navigation -->
+        <nav>
+            <!-- Logo -->
+            <a href="#" class="logo">Parmbir Singh</a>
+            <!-- Menu -->
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <!-- Menu Bars -->
+            <div class="toggle">
+
+            </div>
+        </nav>
+        <!-- Text -->
+        <div class="text-container">
+            <p>Hello,</p>
+            <p>I'm Parmbir</p>
+            <!-- <p>I am a Software Engineer <br> & Designer</p> -->
+        </div>
+
+
+        <!-- Model -->
+        <img src="Backgrounds/warren-wong-bh4LQHcOcxE-unsplash.jpg" alt="model" class="model">
+    </section>
+    <!-- About -->
+    <div class="about-container" id="Projects">
+        <!-- img -->
+        <img src="/Backgrounds/clement-helardot-95YRwf6CNw8-unsplash.jpg" alt="computer">
+        <!-- About Text -->
+        <div class="about-text">
+            <p>Projects</p>
+            <p>HTML, CSS, and JavaScript</p>
+            <p>Heres a few projects that I've recently worked on.</p>
+            <p>I Have Java projects that aren't listed on this page.</p>
+            <!-- button -->
+            <button><a href="https://akquik559.github.io/Calculator/Calculator.html" target="blank"
+                title="Calculator">Calculator</a></button>
+            <button> <a href="https://akquik559.github.io/FlappyBird/" target="blank" title="FlappyBird">Flappy Ghost</a></button>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/JQuery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.toggle').click(function () {
+                $('.toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+
+    </script>
+</body>
+
+</html>

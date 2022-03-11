@@ -36,9 +36,21 @@
             <p>Hello,</p>
             <p>I'm Parmbir</p>
             <p>I am a Software Engineer <br> & Designer</p>
-            <button class="hire-btn">Hire Me</button>
-            <button class="projects">Projects</button>
+            <button class="hire-btn" onclick="OpenResume()">Hire Me</button>
+            <button class="projects" onclick="OpenProjects()">Projects</button>
         </div>
+        <script>
+            function OpenProjects()
+            {
+                window.open("Projects.html");
+            }
+        </script>
+        <script>
+            function OpenResume() 
+            {
+                window.open("Resume/Resume.pdf", "_blank");
+            }
+        </script>
 
         <!-- Model -->
         <img src="Backgrounds/warren-wong-bh4LQHcOcxE-unsplash.jpg" alt="model" class="model">
@@ -55,7 +67,7 @@
                 or Software that needs work on please contact me.</p>
             <p>I also work on website design. If you need any assistance creating a website please contact me.</p>
             <!-- button -->
-            <button>Hire Me</button>
+            <button >Hire Me</button>
             <button>Projects</button>
 
         </div>
@@ -106,34 +118,42 @@
         <p>I work incredible fast and efficient. Please give me a chance to work on your projects.</p>
         <!-- Social -->
         <div class="social-icons">
-            <a href="https://www.facebook.com/sunny.sangha.5" target="blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/sunny.sangha.5" target="blank" title="Facebook"><i
+                    class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter" title="This Page Does Not Exists"></i></a>
-            <a href="https://www.instagram.com/punjabikush/" target="blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/parmbir-singh-9150651bb/" target="blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.youtube.com/channel/UCl0g01Kt1X39woUvAG_W9Fw" target="blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/punjabikush/" target="blank" title="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/parmbir-singh-9150651bb/" target="blank" title="LinkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCl0g01Kt1X39woUvAG_W9Fw" target="blank" title="YouTube"><i
+                    class="fab fa-youtube"></i></a>
         </div>
         <!-- Copyright -->
         <p class="copyright">Copyright by Parmbir Singh</p>
     </footer>
     <!-- attached social bar -->
     <div class="social">
-        <a href="https://www.facebook.com/sunny.sangha.5" target="blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.facebook.com/sunny.sangha.5" target="blank" title="Facebook"><i
+                class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-twitter" title="This Page Does Not Exists"></i></a>
-        <a href="https://www.instagram.com/punjabikush/" target="blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/parmbir-singh-9150651bb/" target="blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.youtube.com/channel/UCl0g01Kt1X39woUvAG_W9Fw" target="blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/punjabikush/" target="blank" title="Instagram"><i
+                class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/parmbir-singh-9150651bb/" target="blank" title="LinkedIn"><i
+                class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/channel/UCl0g01Kt1X39woUvAG_W9Fw" target="blank" title="YouTube"><i
+                class="fab fa-youtube"></i></a>
     </div>
     <!-- JQuery -->
     <script type="text/javascript" src="js/JQuery.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('.toggle').click(function(){
-                    $('.toggle').toggleClass('active')
-                    $('nav').toggleClass('active')
-                })
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.toggle').click(function () {
+                $('.toggle').toggleClass('active')
+                $('nav').toggleClass('active')
             })
+        })
 
-        </script>
+    </script>
 </body>
 
 </html>
